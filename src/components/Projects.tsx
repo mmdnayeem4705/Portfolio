@@ -1,7 +1,7 @@
 import  { useState } from 'react';
 import { Github, ExternalLink } from 'lucide-react';
 
-type ProjectCategory = 'All' | 'JAVA Project' | 'Python Project' | 'BlockChain Project';
+type ProjectCategory = 'All' | 'JAVA Project' | 'Python Project' | 'BlockChain Project' | 'Web Development' | 'Mobile Development';
 
 interface Project {
   title: string;
@@ -43,7 +43,7 @@ const projects: Project[] = [
   }
 ];
 
-const categories: ProjectCategory[] = ['All' ,'JAVA Project' ,'Python Project' , 'BlockChain Project'];
+const categories: ProjectCategory[] = ['All' ,'JAVA Project' ,'Python Project' , 'BlockChain Project', 'Web Development', 'Mobile Development'];
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState<ProjectCategory>('All');
 

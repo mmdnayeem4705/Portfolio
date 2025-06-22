@@ -6,10 +6,22 @@ import {
   Server,
   Smartphone,
   GitBranch,
-  Terminal,
   Cloud
 } from 'lucide-react';
 
+// ✅ Custom "Supply Chain" Icon Component (Placeholder)
+const SupplyChainIcon = () => (
+  <div className="w-6 h-6 rounded-full overflow-hidden flex items-center justify-center bg-white">
+    <img
+      src="https://media.gettyimages.com/id/1310290654/vector/supply-chain-management-line-icon-outline-symbol-vector-illustration.jpg?s=1024x1024&w=gi&k=20&c=24RxRGBYu5Y7NB5tO38VZ566Look4hG8sPAN158iYic="
+      alt="Supply Chain Icon"
+      className="w-full h-full object-cover"
+    />
+  </div>
+);
+
+
+// Skill interface
 interface Skill {
   name: string;
   icon: React.ReactNode;
@@ -17,6 +29,7 @@ interface Skill {
   category: string;
 }
 
+// Skills list
 const skills: Skill[] = [
   { name: 'Frontend Development', icon: <Layout />, level: 90, category: 'Development' },
   { name: 'Backend Development', icon: <Server />, level: 85, category: 'Development' },
@@ -24,10 +37,11 @@ const skills: Skill[] = [
   { name: 'Mobile Development', icon: <Smartphone />, level: 75, category: 'Development' },
   { name: 'Version Control', icon: <GitBranch />, level: 95, category: 'Tools' },
   { name: 'Cloud Services', icon: <Cloud />, level: 70, category: 'Tools' },
-  { name: 'Command Line', icon: <Terminal />, level: 85, category: 'Tools' },
+  { name: 'Blockchain Technology', icon: <SupplyChainIcon />, level: 85, category: 'Tools' },
   { name: 'Problem Solving', icon: <Code2 />, level: 90, category: 'Soft Skills' }
 ];
 
+// Main component
 export default function Skills() {
   return (
     <section id="skills" className="py-20 bg-white dark:bg-gray-900">
@@ -49,7 +63,7 @@ export default function Skills() {
                 <div className="p-3 bg-gradient-to-br from-purple-600 to-pink-600 text-white rounded-lg">
                   {skill.icon}
                 </div>
-                <h3 className="font-semibold">{skill.name}</h3>
+                <h3 className="font-semibold text-white dark:text-white">{skill.name}</h3>
               </div>
               <div className="relative h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                 <div
@@ -60,7 +74,7 @@ export default function Skills() {
                     animationDelay: `${index * 100 + 500}ms`,
                   }}
                 />
-                <style >{`
+                <style>{`
                   @keyframes growWidth {
                     from { width: 0% }
                     to { width: ${skill.level}% }

@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="lg:w-1/2 lg:pr-12">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Hi, I'm Nayeem
+              Hi, I'm Mohammed Nayeem
             </span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300">
@@ -21,20 +21,20 @@ export default function Hero() {
               Contact Me
             </a>
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/drive/folders/1PrasrSekMe2_Icvw6tuyyKw5AQHBD6h7?q=sharedwith:public%20parent:1PrasrSekMe2_Icvw6tuyyKw5AQHBD6h7"
               className="px-6 py-3 border-2 border-purple-600 text-purple-600 dark:text-purple-400 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors"
             >
               Download CV
             </a>
           </div>
           <div className="flex gap-4">
-            <a href="https://github.com/dashboard/mmdnayeem4705" className="social-link">
+            <a href="https://github.com/mmdnayeem4705" className="social-link">
               <Github className="w-6 h-6" />
             </a>
             <a href="https://www.linkedin.com/in/mulla-mohammed-nayeem-09b33a361/" className="social-link">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="/resume.pdf" className="social-link">
+            <a href="https://drive.google.com/drive/folders/1PrasrSekMe2_Icvw6tuyyKw5AQHBD6h7?q=sharedwith:public%20parent:1PrasrSekMe2_Icvw6tuyyKw5AQHBD6h7" className="social-link">
               <FileText className="w-6 h-6" />
             </a>
           </div>

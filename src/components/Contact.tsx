@@ -17,10 +17,10 @@ export default function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="animate-fade-in">
-              <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
-              <p className="text-red-600 dark:text-red-300 mb-8">
+              <h3 className="text-2xl font-semibold mb-6 text-white">Let's Connect</h3>
+              <p className="text-white mb-8">
                 I'm always open to discussing new projects, creative ideas or
-                opportunities to be part of your visions.
+                opportunities to be part of your visions and feel free to ask anything.
               </p>
             </div>
 
@@ -39,8 +39,8 @@ export default function Contact() {
                     {item.icon}
                   </div>
                   <div>
-                    <div className="font-medium">{item.label}</div>
-                    <div className="text-blue-600 dark:blue-gray-300">{item.value}</div>
+                    <div className="font-medium text-white">{item.label}</div>
+                    <div className="text-white">{item.value}</div>
                   </div>
                 </div>
               ))}
@@ -59,7 +59,7 @@ export default function Contact() {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:border-purple-600 peer"
+                className="w-full px-4 py-3 bg-white dark:bg-white border-2 border-gray-200 dark:border-gray-300 rounded-lg focus:outline-none focus:border-purple-600 peer text-black"
                 placeholder=" "
                 required
               />
@@ -76,7 +76,7 @@ export default function Contact() {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:border-purple-600 peer"
+                className="w-full px-4 py-3 bg-white dark:bg-white border-2 border-gray-200 dark:border-gray-300 rounded-lg focus:outline-none focus:border-purple-600 peer text-black"
                 placeholder=" "
                 required
               />
@@ -92,7 +92,7 @@ export default function Contact() {
               <textarea
                 id="message"
                 name="message"
-                className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:border-purple-600 peer h-32 resize-none"
+                className="w-full px-4 py-3 bg-white dark:bg-white border-2 border-gray-200 dark:border-gray-300 rounded-lg focus:outline-none focus:border-purple-600 peer h-32 resize-none text-black"
                 placeholder=" "
                 required
               />
