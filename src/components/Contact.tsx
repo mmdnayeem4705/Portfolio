@@ -49,7 +49,7 @@ export default function Contact() {
 
           {/* Contact Form */}
           <form
-            action="https://formspree.io/f/xqabbjjn"
+            action="https://formspree.io/f/xrbkanqz"
             method="POST"
             className="space-y-6 animate-fade-in"
             onSubmit={() => setIsSubmitted(true)}
